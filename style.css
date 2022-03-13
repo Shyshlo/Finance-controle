@@ -1,0 +1,239 @@
+body{
+    background-image: url('./images/money1.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url('https://hsto.org/files/e77/a7c/af9/e77a7caf9935450fadf788ed0e98e9f1.png');
+    
+}
+.page1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster Two', cursive;
+    margin-top: 2%;
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(48, 230, 243), rgb(224, 127, 143), black);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+
+}
+/*Далее новый класс для смены фона-картинки*/
+.changeimage {
+    background-image: url(./images/pig\ money.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.pagetwo{
+    display: none;
+
+}
+/*Родителю кнопки флекс*/
+.btnpage1{
+    display: flex;
+    justify-content: center;
+ margin-top: 3%;
+}
+#btnpageone{
+    width: 130px;
+    height: 70px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    background: rgb(100, 190, 226) linear-gradient(rgb(48, 230, 243), rgb(224, 127, 143));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .2s, border-color .2s;
+    border: 3px solid transparent;
+        border-image: linear-gradient(135deg, #12BCB0 20%, #a7889a 70%);
+        border-image-slice: 1;
+}
+
+
+#knowledge{
+    display: none;
+}
+
+.container{
+
+background-color: rgb(236, 213, 217);
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 500px;
+border-radius: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 10px;
+}
+
+#showTotalAmountExpenses{
+    /*родитель */
+    display: flex;
+    justify-content: space-around;
+}
+#AmountPerDay, #AmountPerWeek, #AmountPerMonth{
+    /*окно для подсчета  div*/
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+    background-color: rgb(111, 204, 211);
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid transparent;
+        border-image: linear-gradient(135deg, #12BCB0 20%, #a7889a 70%);
+        border-image-slice: 1;
+}
+    
+P{
+    font-family: 'Lobster Two', cursive;
+    font-size: 20px;
+}
+text{
+    font-family: 'Lobster Two', cursive;
+    
+}
+.colortext{
+    /* класс для ввода текста input*/
+    font-family: 'Lobster Two', cursive;
+    border: none;
+    background-color:snow;
+    padding: 7px;
+    font-size: 17px;
+}
+
+*, a:focus {
+
+    outline: none !important;
+    /*убирает рамку при вводе в input*/
+}
+
+#addKnowledge{
+    background-color:snow;
+    font-family: 'Lobster Two', cursive;
+    font-size: 17px;
+    padding: 7px;
+    border: 3px solid transparent;
+        border-image: linear-gradient(135deg, #12BCB0 20%, #a7889a 70%);
+        border-image-slice: 1;
+    
+}
+#knowledge{
+    padding: 7px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 17px;
+    border: 3px solid transparent;
+        border-image: linear-gradient(135deg, #12BCB0 20%, #a7889a 70%);
+        border-image-slice: 1;
+}
+#Calculate{
+    background-color: rgb(111, 204, 211);
+    padding: 7px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+.lastpicture{
+    text-align: center;
+}
+.dreams{
+    background-image: url(./images/good-night-sweet-dreams.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(241, 205, 211);
+}
+
+
+
+
+/*Анимация звездное небо*/
+.stars {
+    position: relative;
+    overflow: hidden;
+    
+    height: 100px;
+    
+    background: rgb(14, 13, 13) url('https://hsto.org/files/ad0/ac2/e32/ad0ac2e32be44930ac76e212245e2e67.png');
+  }
+  
+  .blink, .blink_2, .blink_3, .blink_4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0;
+    
+    background: url('https://hsto.org/files/e77/a7c/af9/e77a7caf9935450fadf788ed0e98e9f1.png');
+    
+    -webkit-animation: stars 5s linear infinite;
+    animation: stars 5s linear infinite;
+  }
+  
+  .blink_2 {
+    background-position: 100px 100px;
+    
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  .blink_3 {
+    background-image: url('https://hsto.org/files/72e/5d6/4c5/72e5d64c5b7444aa81987f069417435b.png');
+    background-position: 300px 100px;
+    
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+  }
+  
+  .blink_4 {
+    background-image: url('https://hsto.org/files/72e/5d6/4c5/72e5d64c5b7444aa81987f069417435b.png');
+    background-position: 0 0;
+    
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    background: -webkit-linear-gradient(left, rgba(169, 239, 248, 0.918), rgba(170, 28, 139, 0.733));
+  }
+  
+  @-webkit-keyframes stars {
+    0%, 50%, 100% {opacity: 0;}
+    1%, 49% {opacity: 1;}
+  }
+  
+  @keyframes stars {
+    0%, 50%, 100% {opacity: 0;}
+    5%, 45% {opacity: 1;}
+  }
+
+@media all and (max-width: 800px) {
+    .page1{
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 600px) {
+    .page1{
+        font-size: 20px;
+    }
+    
+        #AmountPerDay, #AmountPerWeek, #AmountPerMonth{
+            font-size: 15px;
+            margin: 3px;
+            padding: 5px;
+            
+        }
+}

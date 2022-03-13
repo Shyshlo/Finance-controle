@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <link rel='icon' href="data:,">
+    <!--убирает глюк после подключения музыки-->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@500&family=El+Messiri&family=Lobster+Two:ital,wght@1,700&family=Montserrat:ital,wght@0,400;0,500;1,500&family=Nunito:wght@400;600;900&family=Oswald&family=Playfair+Display:ital@1&family=Prata&family=Roboto&family=Staatliches&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="stars">
+
+        <!--*Анимация звездное небо-->
+        <div class="blink"></div>
+        <div class="blink_2"></div>
+        <div class="blink_3"></div>
+        <div class="blink_4"></div>
+        
+        <div class="overlay"></div>
+      </div>
+
+
+    <audio class="myAudio"
+        src='./images/Сиа - The Greatest (Solo Version)_(muztune.me).mp3' loop ='loop' autoplay='allowed'>
+    </audio>
+
+
+    <div class="page1">
+        <h1 class="page1title"></h1>
+    </div>
+    <div class="btnpage1">
+        <button id="btnpageone">💰Yes!</button>
+    </div>
+    
+   <div class="pagetwo">
+<div class="container">
+    <form class="form">
+    <p>House 🏡</p>
+    <input type="text"  class="colortext" id="house" placeholder="Enter your amount here">
+
+<p>Food 🍕</p>
+    <input type="text"  class="colortext" id="food" placeholder="Enter your amount here">
+
+<p>Education 🏫</p>
+    <input type="text"  class="colortext" id="education" placeholder="Enter your amount here">
+
+<p>Health 👨‍👩‍👧‍👦</p>
+    <input type="text" class="colortext" id="health" placeholder="Enter your amount here">
+<p>Auto 🚗</p>
+    <input type="text" class="colortext" id="auto" placeholder="Enter your amount here">
+<p>Shopping 🛒</p>
+    <input type="text" class="colortext" id="shopping" placeholder="Enter your amount here">
+<p>Relax 🎿</p>
+    <input type="text" class="colortext" id="relax" placeholder="Enter your amount here">
+<p>Trips 🏝️</p>
+    <input type="text" class="colortext" id="trips" placeholder="Enter your amount here">
+    
+    <p>And also knowledge!</p>
+    <button  id='addKnowledge'> Add knowledge 📓</button>
+    <select id="knowledge">
+    <option disabled>Select an option</option>
+    <option value="0.1"> 1%💖</option>
+    <option value="0.10"> 10%💜</option>
+    <option value="0.20"> 20%🙂</option>
+    <option value="0.30" selected> 30%🙍</option>
+    </select>
+
+
+    <button id="Calculate">Calculate 💰</button>
+</form>
+
+<div id="showTotalAmountExpenses">
+<div id="AmountPerDay">
+    <p>Amount</p>
+    <span>$</span>
+    <span id="perDay"></span>
+    <span>per day</span>
+</div>
+
+<div id="AmountPerWeek">
+    <p>Amount</p>
+    <span>$</span>
+    <span id="perWeek"></span>
+    <span>per week</span>
+</div>
+
+<div id="AmountPerMonth">
+    <p>Amount</p>
+    <span>$</span>
+    <span id="perMonth"></span>
+    <span>per month</span>
+</div>
+</div>
+<div class="lastpicture">
+<img src="./images/1.gif" width="200" height="100">
+</div>
+
+</div>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
